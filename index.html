@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaneFitness – Самара</title>
+    <link rel="icon" href="logo.ico">
+    <link href="style.css" rel="stylesheet">
+    <link href="adaptive.css" rel="stylesheet">
+    <link href="slider.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+<div class="overlay" style="display: none;">
+    <div class="login-wrapper">
+        <div class="login-content">
+            <h3 style="text-shadow: 0 0 0.25em #fff;">Вход</h3>
+            <form method="post" action="login.php">
+                <label for="username" class="text-success">
+                    Логин:
+                    <input type="text" name="username" id="username" placeholder="Логин" pattern="^[a-zA-Z][a-zA-Z0-9-_.]{8,20}$" required="required" />
+                </label>
+                <label for="password" class="text-success">
+                    Пароль:
+                    <input type="password" name="password" id="password" placeholder="••••••••" pattern="(?=^.{8,}$)((?=.*d)|(?=.*W+))(?![.n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+                <button type="submit" class="btn btn-success btn-md">Войти</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="overlay1" style="display: none;">
+  <div class="login-wrapper1">
+      <div class="login-content1">
+          <h3 style="text-shadow: 0 0 0.25em #fff;">Регистрация</h3>
+          <form method="post" action="register.php">
+              <label for="username" class="text-success">
+                  Логин:
+                  <input type="text" name="username" id="username" placeholder="Логин" pattern="^[a-zA-Z][a-zA-Z0-9-_.]{8,20}$" required="required" />
+              </label>
+              <label for="password" class="text-success">
+                  Пароль:
+                  <input type="password" name="password" id="password" placeholder="••••••••" pattern="(?=^.{8,}$)((?=.*d)|(?=.*W+))(?![.n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+              </label>
+              <button type="submit" class="btn btn-success btn-md">Зарегистрироваться</button>
+          </form>
+      </div>
+  </div>
+</div>
+<div class="maincont">
+<header>
+  <div class="containerh">
+      <a href="#" class="logo">
+        <img src="logo.png" alt="#">
+      </a>
+      <ul class="menutop">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="uslugi.html">Услуги</a></li>
+        <li><a href="tarify.html">Тарифы</a></li>
+        <li><a href="certificate.html">Сертификаты</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><button class="btn btn-outline-success btn-md" href="login.php" id="loginLink">Логин</button></li>
+      </ul>
+  </div>
+</header>
+
+<hr>
+<br>
+<br>
+<br>
+<br>
+
+    <div class="container">
+        <div id="textitem1">
+            <h3 id="blurch" class="text-success">ФИТНЕС ДО КОНЦА ГОДА БЕСПЛАТНО!</h3>
+            <p class="text-white">ФИТНЕС-КЛУБЫ КЛАССА «ПРЕМИУМ» И «БИЗНЕС», 
+              ГДЕ КАЖДЫЙ КЛИЕНТ ПОЛУЧАЕТ ВСЁ НЕОБХОДИМОЕ <br>
+              ДЛЯ ПОЗИТИВНЫХ ИЗМЕНЕНИЙ И ВЫХОДА НА
+              БОЛЕЕ КАЧЕСТВЕННЫЙ УРОВЕНЬ ЖИЗНИ.</p>
+              <form action="tarify.html">
+            <button class="btn btn-success">Наши тарифы</button>
+          </form>
+        </div>
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <img src="https://fitnessweb.ru/wp-content/uploads/2018/02/1.png" height="350" width="350" alt="" />
+            </div>
+            <div class="slide">
+              <img src="http://www.cagrispor.com/wp-content/uploads/2016/05/fitness-2.jpg" height="350" width="350" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.pinimg.com/originals/15/d1/56/15d156cc2fb1050b8681a55ac979406c.png" height="350" width="350" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.pinimg.com/736x/d9/78/26/d97826b1f16b2f805869af524467f475.jpg" height="350" width="350" alt="" />
+            </div>
+            <div class="slide">
+              <img src="http://www.catsmob.com/post/2012/05/00885/awesome_timed_sports_photos_017.jpg" height="350" width="350" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.pinimg.com/736x/29/f6/2a/29f62a714b1452584d8819c02c6fcb6e.jpg" height="350" width="350" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://img0.festima.ru/2/rICDcbaxAGm1xoJk13egiBrSAG0_0Apr" height="350" width="350" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.pinimg.com/736x/dc/2b/46/dc2b46541b263a171db1754c231fb930.jpg" height="350" width="350" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.pinimg.com/originals/77/80/51/7780512d1cd82ee80d6fc2787dc21e31.jpg" height="350" width="350" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://uk.ilovevaquero.com/images/sport-i-fitnes/trenirovki-arnolda-shvarceneggera-filosofiya-uspeha_2.jpg" height="350" width="350" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.pinimg.com/736x/7d/93/f8/7d93f833370da405eba50fe23098af13--capt-america-god-bless-america.jpg" height="350" width="350" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.pinimg.com/736x/ac/93/e9/ac93e944d8f1121fe590951361012402--rap-music-music-rock.jpg" height="350" width="350" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://sun9-42.userapi.com/impf/vXpJa-cpSsTbz5Hh17kjE9v1aD6xQzXvoAEA9g/PUrbU2U_Yn0.jpg?size=500x700&quality=96&sign=b4ef24c7e7caac81fac2e3c6914ac6b7&c_uniq_tag=-vF1tjxWi290EJO760YyX0ACQgMd9jYsglYQO202ax4&type=album" height="350" width="350" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://famet.ru/images/product_images/popup_images/10471_2.jpg" height="350" width="350" alt="" />
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+<div id="mapka">
+    <h4 class="text-success">Вы можете найти нас здесь:
+    </h4>
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad245c2676c5e1a1823921bd7f11d45edcca3c2a619d982b1435efbc04d326b22&amp;source=constructor" width="750" height="240" frameborder="yes"></iframe>
+</div>
+
+
+
+    <footer>
+      <br>
+      <hr>
+        <div class="footcont">
+          <p class="textik">© 2023 PlaneFitness</p>
+          <p><a href="tel:+79999999999" class="siilka">+7 (999) 999-99-99</a></p>
+          <a href="https://vk.com/dystymi" class="socials"><img src="Vkontakte-Logo-Transparent-PNG.png" width="48" height="48"></a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
